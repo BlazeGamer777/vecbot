@@ -12,7 +12,7 @@ fs.readdir("./commands/", (err, files) =>{
  if(jsfile.length <= 0){
   console.log("Could not find command.")
   return;
- }
+ };
 
  jsfile.forEach((f, i) =>{
   let props = require(`./commands/${f}`);
