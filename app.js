@@ -6,13 +6,14 @@ const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
-fs.readdir("./commands/", (err, files) =>{
+fs.readdir("./commands/", (err, files) => {
  if(err) console.log(err)
- let jsfile = files.filter(f => f.split(".").pop() === "js");
+ 
+ let jsfile = files.filter(f => f.split(".").pop() === "js")
  if(jsfile.length <= 0){
-  console.log("Could not find command.")
+  console.log("Could not find commands.")
   return;
- };
+ }
 
  jsfile.forEach((f, i) =>{
   let props = require(`./Commands/${f}`);
