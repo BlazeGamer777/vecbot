@@ -1,0 +1,14 @@
+{
+  "name": "vecbot",
+  "version": "1.0.0",
+  "description": "A normal bot made by Blaze#5023 and Vectia#1812",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blaze#5023 and Vectia#1812",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
